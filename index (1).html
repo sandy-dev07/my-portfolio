@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thala's Kitchen</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #0a0a0a;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1a1a, #333);
+      text-align: center;
+      padding: 50px 20px;
+      border-bottom: 4px solid #FFD700;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      color: #FFD700;
+      letter-spacing: 4px;
+      text-shadow: 2px 2px 8px rgba(255,215,0,0.4);
+    }
+
+    header .tagline {
+      color: #ccc;
+      font-size: 1rem;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    header .star {
+      font-size: 1.2rem;
+      color: #FFD700;
+      margin-top: 6px;
+    }
+
+    .menu-container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .category-title {
+      text-align: center;
+      font-size: 1.8rem;
+      color: #FFD700;
+      margin: 40px 0 20px;
+      border-bottom: 2px solid #FFD700;
+      padding-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-card {
+      background: #1a1a1a;
+      border: 1px solid #FFD700;
+      border-radius: 12px;
+      padding: 24px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+    }
+
+    .menu-card .emoji {
+      font-size: 2.5rem;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .menu-card h3 {
+      color: #FFD700;
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .menu-card .movie-tag {
+      color: #888;
+      font-size: 0.75rem;
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+
+    .menu-card p {
+      color: #bbb;
+      font-size: 0.85rem;
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+
+    .price {
+      color: #FFD700;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #888;
+      font-size: 0.85rem;
+      margin-top: 40px;
+      border-top: 2px solid #FFD700;
+    }
+
+    footer .thala-quote {
+      color: #FFD700;
+      font-size: 1rem;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>⭐ Thala's Kitchen</h1>
+    <p class="tagline">Inspired by the Legend — Ajith Kumar</p>
+    <p class="star">★★★★★ | Est. 2024 | Theni, Tamil Nadu</p>
+  </header>
+
+  <div class="menu-container">
+
+    <h2 class="category-title">🥗 Starters</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <span class="emoji">🔥</span>
+        <h3>Mankatha Masala Fry</h3>
+        <div class="movie-tag">🎬 Inspired by Mankatha (2011)</div>
+        <p>Spicy crispy chicken fry with bold masala — just like the film, full of fire!</p>
+        <span class="price">₹220</span>
+      </div>
+      <div class="menu-card">
+        <span class="emoji">🥙</span>
+        <h3>Billa Tikka</h3>
+        <div class="movie-tag">🎬 Inspired by Billa (2007)</div>
+        <p>Smooth and stylish paneer tikka — elegant like Billa himself!</p>
+        <span class="price">₹180</span>
+      </div>
+      <div class="menu-card">
+        <span class="emoji">🧅</span>
+        <h3>Vaalimai Vadai</h3>
+        <div class="movie-tag">🎬 Inspired by Valimai (2022)</div>
+        <p>Crispy medu vadai — strong and powerful in every bite!</p>
+        <span class="price">₹100</span>
+      </div>
+    </div>
+
+    <h2 class="category-title">🍛 Main Course</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <span class="emoji">🍛</span>
+        <h3>Vivegam Biryani</h3>
+        <div class="movie-tag">🎬 Inspired by Vivegam (2017)</div>
+        <p>Action-packed dum biryani loaded with spices — intense and unforgettable!</p>
+        <span class="price">₹320</span>
+      </div>
+      <div class="menu-card">
+        <span class="emoji">🥘</span>
+        <h3>Thunivu Curry</h3>
+        <div class="movie-tag">🎬 Inspired by Thunivu (2023)</div>
+        <p>Bold and daring mutton curry — no compromise on taste!</p>
+        <span class="price">₹360</span>
+      </div>
+      <div class="menu-card">
+        <span class="emoji">🍚</span>
+        <h3>AK Style Meals</h3>
+        <div class="movie-tag">🎬 Thala Special</div>
+        <p>Full South Indian meals with rice, sambar, rasam & 3 curries</p>
+        <span class="price">₹200</span>
+      </div>
+    </div>
+
+    <h2 class="category-title">🍹 Drinks</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <span class="emoji">🥭</span>
+        <h3>Good Boy Mango Lassi</h3>
+        <div class="movie-tag">🎬 Inspired by Good Boy (2024)</div>
+        <p>Sweet fresh mango lassi — smooth and refreshing!</p>
+        <span class="price">₹120</span>
+      </div>
+      <div class="menu-card">
+        <span class="emoji">☕</span>
+        <h3>Thala Filter Coffee</h3>
+        <div class="movie-tag">🎬 Thala Special</div>
+        <p>Classic South Indian filter coffee — strong like Thala!</p>
+        <span class="price">₹60</span>
+      </div>
+    </div>
+
+    <h2 class="category-title">🍮 Desserts</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <span class="emoji">🍮</span>
+        <h3>Nerkonda Paarvai Halwa</h3>
+        <div class="movie-tag">🎬 Inspired by Nerkonda Paarvai (2019)</div>
+        <p>Sweet justice in every spoon — rich badam halwa!</p>
+        <span class="price">₹150</span>
+      </div>
+      <div class="menu-card">
+        <span class="emoji">🍨</span>
+        <h3>Aaluma Doluma Ice Cream</h3>
+        <div class="movie-tag">🎬 Inspired by Veeram (2014)</div>
+        <p>Fun and colourful scoops — 3 flavours like 3 brothers!</p>
+        <span class="price">₹130</span>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p class="thala-quote">"En vazhi thani vazhi!" 🌟</p>
+    <p>📍 Thala's Kitchen, Theni, Tamil Nadu</p>
+    <p>📞 +91 98765 43210 | ⏰ Open: 11AM - 11PM</p>
+  </footer>
+
+</body>
+</html>
